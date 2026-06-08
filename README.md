@@ -1,127 +1,273 @@
 # 🌱 EcoHabit – AI Powered Sustainable Lifestyle Assistant
-## Stremlit Application: https://ecohabit.streamlit.app/
 
-EcoHabit is an AI-powered sustainability assistant that helps users adopt eco-friendly habits through task recommendations, gamification, and environmental analytics.
+### 🚀 Live Application
 
-The system analyzes a user's lifestyle and recommends personalized eco-tasks. Users earn tokens and streak rewards by completing tasks and uploading proof, encouraging sustainable daily habits.
+https://ecohabit.streamlit.app/
+
+### 🔗 GitHub Repository
+
+https://github.com/unnatisuple/EcoHabit
+
+---
+
+## 📖 Overview
+
+EcoHabit is an AI-powered sustainability assistant that helps users adopt eco-friendly habits through personalized task recommendations, gamification, and environmental analytics.
+
+The system analyzes a user's lifestyle and recommends sustainable daily actions based on their habits. Users earn tokens and maintain streaks by completing eco-tasks and uploading proof, encouraging long-term environmentally responsible behavior.
+
+---
 
 ## 🚀 Features
-👤 User Authentication<br>
-User Signup and Login system<br>
-Secure session management<br>
-Personalized dashboard<br>
 
-🌱 AI Eco Task Recommendation<br>
-Uses Decision Tree Classifier<br>
-Recommends eco-friendly tasks based on:<br>
-Transport habits<br>
-Recycling habits<br>
-Plastic usage<br>
-Meat consumption<br>
+### 👤 User Authentication
 
-🏆 Gamification System<br>
-Users earn tokens for completing tasks<br>
-Daily streak tracking<br>
-Motivates sustainable behavior<br>
+* User Signup and Login System
+* Secure Session Management
+* Personalized User Dashboard
 
-📸 Task Proof Upload<br>
-Users upload images as proof of completed eco tasks<br>
-Image stored for verification<br>
+### 🌱 AI Eco Task Recommendation
 
-🌍 Sustainability Score Calculator<br>
-Predicts sustainability score using Linear Regression.<br>
-Score levels:<br>
-Beginner<br>
-Eco Learner<br>
-Green Champion<br>
-Climate Hero<br>
+* Uses Machine Learning (Decision Tree Classifier)
+* Recommends eco-friendly tasks based on:
 
-🌎 Carbon Footprint Calculator<br>
-Calculates environmental impact based on:<br>
-Electricity usage<br>
-Vehicle travel<br>
-Flights<br>
-Meat consumption<br>
+  * Transport Habits
+  * Recycling Habits
+  * Plastic Usage
+  * Meat Consumption
 
-📊 Eco Analytics Dashboard<br>
-Tracks user token progress<br>
-Displays eco activity trends<br>
-Line chart visualization<br>
+### 🏆 Gamification System
 
-🧠 Machine Learning Algorithms Used<br>
-Decision Tree Classifier<br>
-Used to recommend eco-friendly tasks based on user lifestyle.<br>
-Linear Regression<br>
-Used to predict the user sustainability score.<br>
-Label Encoding<br>
-Converts categorical lifestyle inputs into numerical values for ML models.<br>
+* Earn Tokens for Completing Tasks
+* Daily Streak Tracking
+* Reward-Based Motivation System
 
-🛠 Technologies Used<br>
-Frontend<br>
-Streamlit<br>
-Backend<br>
-Python<br>
-Machine Learning<br>
-Scikit-learn<br>
-Database<br>
-SQLite<br>
-Data Processing<br>
-Pandas<br>
-NumPy<br>
-Image Handling<br>
-Pillow<br>
+### 📸 Task Proof Upload
 
-📂 Project Structure<br>
-```
+* Upload Images as Proof of Task Completion
+* Secure Image Storage for Verification
+
+### 🌍 Sustainability Score Calculator
+
+Predicts a user's sustainability score using Linear Regression.
+
+#### Sustainability Levels
+
+* Beginner
+* Eco Learner
+* Green Champion
+* Climate Hero
+
+### 🌎 Carbon Footprint Calculator
+
+Calculates environmental impact based on:
+
+* Electricity Usage
+* Vehicle Travel
+* Flight Travel
+* Meat Consumption
+
+### 📊 Eco Analytics Dashboard
+
+* Token Progress Tracking
+* Sustainability Insights
+* Eco Activity Trends
+* Interactive Line Chart Visualization
+
+---
+
+## 🧠 Machine Learning Algorithms Used
+
+### Decision Tree Classifier
+
+Used to recommend eco-friendly tasks based on user lifestyle and environmental habits.
+
+### Linear Regression
+
+Used to predict the sustainability score of users.
+
+### Label Encoding
+
+Converts categorical lifestyle inputs into numerical values for machine learning models.
+
+---
+
+## 🛠 Technologies Used
+
+### Frontend
+
+* Streamlit
+
+### Backend
+
+* Python
+
+### Machine Learning
+
+* Scikit-learn
+
+### Database
+
+* SQLite
+
+### Data Processing
+
+* Pandas
+* NumPy
+
+### Image Handling
+
+* Pillow
+
+---
+
+## 📂 Project Structure
+
+```text
 EcoHabit/
-|
+│
 ├── app.py
 ├── model.py
 ├── database.db
 ├── eco_dataset.csv
 ├── ui.py
-
+│
 ├── pages/
 │   ├── 1_Dashboard.py
 │   ├── 2_Sustainability_Score.py
 │   ├── 3_Carbon_Footprint.py
-│   ├── 4_Eco_Analytics.py
-
-├── uploads
-
+│   └── 4_Eco_Analytics.py
+│
+├── uploads/
+│
 ├── requirements.txt
 └── README.md
 ```
 
-# ⚙ Installation
-Clone the repository<br>
-git clone https://github.com/avanteesarve-code/ecohabit.git<br>
--> Go into project folder<br>
-```Bash
-cd ecohabit
-``` 
----> Create virtual environment<br>
-```Bash
+---
+
+## ⚙ Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/unnatisuple/EcoHabit.git
+```
+
+### Navigate to the Project Directory
+
+```bash
+cd EcoHabit
+```
+
+### Create a Virtual Environment
+
+```bash
 python -m venv venv
 ```
---> Activate environment<br>
---> Windows<br>
-```Bash
+
+### Activate the Virtual Environment
+
+#### Windows
+
+```bash
 venv\Scripts\activate
 ```
---> Install dependencies<br>
-```Bash
+
+#### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
-Run the application<br>
-```Bash
-streamlit run app.py  OR python -m streamlit run app.py
+
+### Run the Application
+
+```bash
+streamlit run app.py
 ```
 
-🎯 Problem Statement<br>
-Many individuals want to adopt sustainable habits but lack guidance, motivation, and measurable progress tracking.<br>
-EcoHabit solves this problem by combining AI-powered task recommendations, gamification, and environmental analytics to help users build eco-friendly habits.<br>
+or
 
-👩‍💻 Developed By<br>
-Avantee Sarve
+```bash
+python -m streamlit run app.py
+```
+
+---
+
+## 🎯 Problem Statement
+
+Many individuals want to adopt sustainable habits but often lack:
+
+* Proper guidance
+* Daily motivation
+* Environmental awareness
+* Progress tracking mechanisms
+
+EcoHabit addresses these challenges by combining artificial intelligence, machine learning, gamification, and sustainability analytics into a single platform that helps users build environmentally friendly habits.
+
+---
+
+## 🌍 Impact
+
+EcoHabit encourages users to:
+
+* Reduce carbon emissions
+* Improve sustainable living practices
+* Build eco-friendly habits
+* Increase environmental awareness
+* Track personal sustainability progress
+
+---
+
+## 🔮 Future Enhancements
+
+* AI Chatbot for Sustainability Guidance
+* Community Challenges and Competitions
+* QR-Based Task Verification
+* Carbon Emission Forecasting
+* Mobile Application Support
+* Leaderboards and Achievement Badges
+* Multi-Language Support
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+* Login Page
+* Dashboard
+* Sustainability Score Calculator
+* Carbon Footprint Calculator
+* Eco Analytics Dashboard
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a new feature branch
+3. Commit your changes
+4. Push to your branch
+5. Create a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👩‍💻 Developed By
+
+**Unnati Suple**
 
