@@ -1,0 +1,1 @@
+﻿[server]`r`nheadless = true`r`nport = 8501`r`nenableCORS = false`r`n
